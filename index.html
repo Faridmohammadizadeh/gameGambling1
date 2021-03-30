@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--about">? how to play</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+
+    <div class="modal hidden">
+      <h1>How to play</h1>
+      <p>
+        the goal is the first player can achive 100 total score wins. Rules are
+        simple. Player 1 start rolling the dice. The point on the dice will add
+        to current. you have to option : 1. HOLD. when the player hold, the
+        current score will add to total score and its's next player turn. 2.
+        Roll dice again. You can continiue rolling but if dice show 1 you will
+        lose your score and it's next player turn.
+      </p>
+      <h1></h1>
+      <h1>چگونه بازی کنیم</h1>
+      <p>
+        هدف در این بازی این است که اولین بازی کنی که 100 امتیاز بگیرد برنده است
+        قوانین ساده هستند بازیکن 1 شروع به تاس انداختن میکند عدد روی تاس به
+        امتیاز موقت اضافه میشود شما دو راه دارین اول این که نگه دارید و امتیاز
+        موقتتان به امتیاز کل اضافه میشود و نوبت بازیکن دیگر است راه دوم این است
+        که به تاس انداختن ادامه بدهید و امتیاز موقتتان را بیشتر کنید ولی اگر تاس
+        یک بیاید امتیاز موقتتان صفر خواهد شد و بدون این که امتیازی بگیرید نوبت
+        بازیکن بعد میشود
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
